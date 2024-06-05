@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Візитка</TITLE></HEAD>
+    <BODY>
+        <SCRIPT type="text/javascript" language="JavaScript">
+                var name = prompt('Введіть прізвище та ім`я','');
+                var position = prompt('Введіть позицію','');
+                var phone = prompt('Введіть номер телефону','')
+
+                var visitcard = ' <TABLE width="100%" border="0">'
+                +' <TR>'
+                +' <TD align="CENTER" valign="CENTER">'
+                +' <IMG src="icon.png">'
+                +' </TD>'
+                +' <TD align="CENTER">'
+                +' <B>' + name + '</B><BR>'
+                +' <I>' + position + '</I><BR>'
+                +' <FONT color="blue">' + phone + '</FONT>'
+                +' </TD>'
+                +' </TR>'
+                +' </TABLE>'; 
+                document.write(' </TD>');
+                document.write(' </TR>');
+                document.write(' </TABLE>');
+                document.write('</TD></TR>');
+                document.write('</TABLE>');
+                document.write('<TABLE width="100%" border="1" align="CENTER">');
+                for(var y=0; y<12; y++)
+                {
+                document.write('<TR>');
+                for(var x=0; x<3; x++)
+                {
+                document.write( '<TD align="CENTER" style="background-color: rgb(224, 224, 224);">');
+                document.write( visitcard );
+                document.write('</TD>');
+                }
+                document.write('</TR>');
+                }
+                document.write('</TABLE>'); 
+            //-->
+        </SCRIPT>
+        
+    </BODY>
+</HTML>
